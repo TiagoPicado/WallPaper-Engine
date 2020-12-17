@@ -12,7 +12,7 @@ export function update() {
   var m = checkTime(today.getMinutes());
   var s = checkTime(today.getSeconds());
    
-  let newString =  h + ":" + m;
+  let newString =  h + ":" + m + ":" + s;
   if (newString != lastString) {
     lastString = newString;
     thisLayer.text = newString.replace('$', engine.userProperties.name);
